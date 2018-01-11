@@ -15,16 +15,17 @@ namespace PaymentContext.Domain.Entities
             _subscriptions = new List<Subscription>();
 
         }
-        public string FirtsName {get; set;}
-        public string LastName {get; set;}
-        public string Document {get; set;}
-        public string Email {get; set;}       
+        public string FirtsName { get; set; }
+        public string LastName { get; set; }
+        public string Document { get; set; }
+        public string Email { get; set; }
         public string Address { get; set; }
-         public IReadOnlyCollection<Subscription> Subscriptions {get {return _subscriptions.ToArray(); }}
+        public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
 
-         public void AddSubscription(Subscription sub)
-         {
-           //  foreach()        
-         }
+        public void AddSubscription(Subscription sub)
+        {
+            foreach (var item in _subscriptions)
+                item.Active = false;
+        }
     }
 }
