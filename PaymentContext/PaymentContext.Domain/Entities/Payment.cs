@@ -9,7 +9,7 @@ namespace PaymentContext.Domain.Entities
        public DateTime ExpireDate { get; set; }
        public decimal Total { get; set; }
        public decimal TotalPaid { get; set; }
-       public string Address { get; set; }
+       public string Address { get; set; } //Endereco de cobranca
        public string Document {get; set;}
        public string Payer { get; set; }
        public string Email { get; set; }
@@ -27,7 +27,7 @@ namespace PaymentContext.Domain.Entities
     {
        public string CardHolderName { get; set; }
        public string CardNumer { get; set; } //ultimos 4 digitos
-       public string LastTransactionNumber { get; set; } //numero da ultima transação
+       public string LastTransactionNumber { get; set; }  //numero da ultima transação
     }
 
      public class PayPalPayment: Payment
