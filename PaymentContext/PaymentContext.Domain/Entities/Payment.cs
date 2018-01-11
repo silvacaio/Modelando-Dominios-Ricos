@@ -8,8 +8,8 @@ namespace PaymentContext.Domain.Entities
        public DateTime PaidDate { get; set; }
        public DateTime ExpireDate { get; set; }
        public decimal Total { get; set; }
-       public decimal TotalPaid { get; set; }
-       public string Address { get; set; } //Endereco de cobranca
+       public decimal TotalPaid { get; set; } // total a ser pago
+       public string Address { get; set; } //Endereco de cobranca 
        public string Document {get; set;}
        public string Payer { get; set; }
        public string Email { get; set; }
