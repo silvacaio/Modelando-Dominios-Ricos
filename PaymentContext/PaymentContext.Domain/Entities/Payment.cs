@@ -28,23 +28,4 @@ namespace PaymentContext.Domain.Entities
         public string Email { get; private set; }
 
     }
-
-    public class BoletoPayment : Payment
-    {
-        public string BarCode { get; set; }
-        public string BoletoNumber { get; set; }
-
-    }
-
-    public class CreditCardPayment : Payment
-    {
-        public string CardHolderName { get; set; }
-        public string CardNumer { get; set; } //ultimos 4 digitos
-        public string LastTransactionNumber { get; set; }  //numero da ultima transação
-    }
-
-    public class PayPalPayment : Payment
-    {
-        public string TransactionCode { get; set; }
-    }
 }

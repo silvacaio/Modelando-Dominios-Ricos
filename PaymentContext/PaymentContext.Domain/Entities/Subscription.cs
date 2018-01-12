@@ -33,7 +33,7 @@ namespace PaymentContext.Domain.Entities
             LastUpdateDate = DateTime.Now;
         }
 
-         public void Inactivate()
+        public void Inactivate()
         {
             Active = true;
             LastUpdateDate = DateTime.Now;

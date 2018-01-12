@@ -6,3 +6,11 @@ D:\Cursos\Modelando Dominios Ricos\PaymentContext\PaymentContext.Shared\obj\Debu
 D:\Cursos\Modelando Dominios Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.AssemblyInfo.cs
 D:\Cursos\Modelando Dominios Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.dll
 D:\Cursos\Modelando Dominios Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.pdb
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\bin\Debug\netstandard2.0\PaymentContext.Shared.deps.json
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\bin\Debug\netstandard2.0\PaymentContext.Shared.dll
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\bin\Debug\netstandard2.0\PaymentContext.Shared.pdb
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.csproj.CoreCompileInputs.cache
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.AssemblyInfoInputs.cache
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.AssemblyInfo.cs
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.dll
+D:\Cursos\Modelando-Dominios-Ricos\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.pdb
