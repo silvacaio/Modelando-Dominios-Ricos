@@ -24,8 +24,11 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscription(Subscription sub)
         {
+            //Cancelar todas as outras e coloca a nova como principal
             foreach (var item in _subscriptions)
-                item.Active = false;
+                item.Inactivate();
+            
+            _subscriptions.Add(sub);
         }
     }
 }
