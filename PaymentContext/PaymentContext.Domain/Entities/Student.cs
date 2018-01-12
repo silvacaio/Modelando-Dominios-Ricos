@@ -1,25 +1,26 @@
 using System.Collections.Generic;
+using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student
+    public class Student : Entity
     {
         private List<Subscription> _subscriptions;
 
-        public Student(string firtsName, string lastName, string document, string email)
+        public Student(Name name, Document document, Email email)
         {
-            FirtsName = firtsName;
-            LastName = lastName;
+            Name = name;
             Document = document;
             Email = email;
             _subscriptions = new List<Subscription>();
 
+            AddNotifications(Name, Document, Email);
         }
-        public string FirtsName { get; set; }
-        public string LastName { get; set; }
-        public string Document { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
+        public Name Name { get; private set; }
+        public Document Document { get; private set; }
+        public Email Email { get; private set; }
+        public Address Address { get; private set; }
         public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
 
         public void AddSubscription(Subscription sub)
@@ -27,7 +28,7 @@ namespace PaymentContext.Domain.Entities
             //Cancelar todas as outras e coloca a nova como principal
             foreach (var item in _subscriptions)
                 item.Inactivate();
-            
+
             _subscriptions.Add(sub);
         }
     }
