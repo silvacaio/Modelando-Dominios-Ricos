@@ -35,11 +35,14 @@ namespace PaymentContext.Domain.Commands
 
         public void Validate()
         {
-            AddNotifications(new Contract()
-                             .Requires()
-                             .HasMinLen(FirtsName, 3, "Name.FirtsName", "O nome deve ter ao menos 3 caracteres")
-                             .HasMinLen(LastName, 3, "Name.LastName", "O sobrenome deve ter ao menos 3 caracteres")
-                             .HasMaxLen(FirtsName, 40, "Name.FirtsName", "O nome deve ter até 40 caracteres"));
+             AddNotifications(new Contract()
+                              .Requires()
+                              .HasMinLen(FirtsName, 3, "Name.FirtsName", "O nome deve ter ao menos 3 caracteres")
+                              .IsNotNullOrEmpty(LastName,"Name.LastName","O sobrenome não pode ser vazio")
+             //                 .HasMinLen(LastName, 3, "Name.LastName", "O sobrenome deve ter ao menos 3 caracteres")
+                              .HasMaxLen(FirtsName, 40, "Name.FirtsName", "O nome deve ter até 40 caracteres"));
+
+           // AddNotification("Name.LastName", "teste");
         }
     }
 }
