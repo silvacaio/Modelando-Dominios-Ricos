@@ -34,9 +34,12 @@ namespace PaymentContext.Domain.Entities
 
             }
 
+            _subscriptions.Add(subscription);
+
             AddNotifications(new Contract()
                         .Requires()
-                        .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem um inscrição ativa"));
+                        .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem um inscrição ativa")
+                        .IsGreaterThan(subscription.Payments.Count, 0, "Student.Subscription.Payment", "Esta assinatura nao possui pagamentos"));
             //Cancelar todas as outras e coloca a nova como principal
             // foreach (var item in _subscriptions)
             //    item.Inactivate();
