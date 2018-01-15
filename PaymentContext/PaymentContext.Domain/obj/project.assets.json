@@ -219,35 +219,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\caio.silva\\.nuget\\packages\\": {},
+    "C:\\Users\\Caio\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cursos\\Modelando-Dominios-Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+      "projectUniqueName": "D:\\Cursos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
       "projectName": "PaymentContext.Domain",
-      "projectPath": "D:\\Cursos\\Modelando-Dominios-Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
-      "packagesPath": "C:\\Users\\caio.silva\\.nuget\\packages\\",
-      "outputPath": "D:\\Cursos\\Modelando-Dominios-Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
+      "projectPath": "D:\\Cursos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+      "packagesPath": "C:\\Users\\Caio\\.nuget\\packages\\",
+      "outputPath": "D:\\Cursos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\caio.silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Caio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Cursos\\Modelando-Dominios-Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
-              "projectPath": "D:\\Cursos\\Modelando-Dominios-Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
+            "D:\\Cursos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
+              "projectPath": "D:\\Cursos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
             }
           }
         }
