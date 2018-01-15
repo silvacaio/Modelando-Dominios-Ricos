@@ -21,10 +21,8 @@ namespace PaymentContext.Tests.Handlers
             command.LastName = "Silva";
             command.Document = "99999999999";
             command.Email = "caio@gmail.com";
-            command.BarCode =
-            command.BoletoNumber =
-
-            // public DateTime ExpireDate { get;  set; }
+            command.BarCode = "999999";
+            command.BoletoNumber = "111";
             command.PaymentNumber = "123";
             command.PaidDate = DateTime.Now;
             command.ExpireDate = DateTime.Now.AddMonths(1);
