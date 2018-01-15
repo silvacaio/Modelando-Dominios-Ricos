@@ -16,9 +16,9 @@ namespace PaymentContext.Domain.ValueObjects
             Country = country;
             ZipCode = zipCode;
 
-                AddNotifications(new Contract()
-                            .Requires()
-                            .HasMinLen(Street, 3,"NAddressame.Street", "O campo rua deve ter ao menos 3 caracteres")                          );
+            AddNotifications(new Contract()
+                        .Requires()
+                        .HasMinLen(Street, 3, "NAddressame.Street", "O campo rua deve ter ao menos 3 caracteres"));
         }
 
         public string Street { get; private set; }

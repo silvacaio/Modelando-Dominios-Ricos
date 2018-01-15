@@ -25,7 +25,8 @@ namespace PaymentContext.Domain.ValueObjects
 
         public override string ToString()
         {
-            return string.Format("{0} {1}", FirtsName, LastName);
+            //return string.Format("{0} {1}", FirtsName, LastName);
+            return $"{FirtsName} {LastName}";
         }
     }
 }

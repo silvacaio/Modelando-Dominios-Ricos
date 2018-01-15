@@ -17,7 +17,7 @@ namespace PaymentContext.Domain.Handlers
         private readonly IStudentRepository _repository;
         private readonly IEmailService _emailService;
 
-        protected SubscriptionHandler(IStudentRepository repository, IEmailService emailService)
+        public SubscriptionHandler(IStudentRepository repository, IEmailService emailService)
         {
             _repository = repository;
             _emailService = emailService;
@@ -54,6 +54,7 @@ namespace PaymentContext.Domain.Handlers
             //Gerar entidades
             var student = new Student(name, document, email);
             var subscription = new Subscription(DateTime.Now.AddMonths(1));
+           // var address = new Address("Borges de Medeiros", "1234", "Centro", "Flores da Cunha", "RS", "Brasil", "65325123");
             var payment = new BoletoPayment(command.BarCode, command.BoletoNumber, command.PaidDate, command.ExpireDate, command.Total, command.TotalPaid,
             new Document(command.PayerDocument, command.PayerDocumentType), command.Payer, new Email(command.PayerEmail));
 
@@ -64,12 +65,16 @@ namespace PaymentContext.Domain.Handlers
             //Aplicar validacoes
             AddNotifications(name, document, email, student, subscription, payment);
 
+
+            if (Invalid)
+                return new CommandResult(false, "Não foi possivel realizar a assinatura.");
+
             //Salvar informações
             _repository.CreateSubscription(student);
             //Enviar email de boas vindas
             _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao site", "Seja bem vindo");
 
-            //retornar informações
+            //retornar informações          
 
             return new CommandResult(true, "Assinatura realizada com sucesso.");
         }

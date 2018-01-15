@@ -20,6 +20,7 @@ namespace PaymentContext.Tests.Entities
             var email = new Email("caio@caio.com");
             _student = new Student(name, document, email);
             _subscription = new Subscription(null);
+            //     var adress = new Address();
             _payment = new PayPalPayment("12345678", DateTime.Now, DateTime.Now.AddDays(5), 10, 10, document, "Caio", email);
         }
         [TestMethod]
